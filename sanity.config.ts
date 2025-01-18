@@ -1,3 +1,5 @@
+/* eslint-disable @typescript-eslint/no-unused-expressions */
+import { markdownSchema } from './node_modules/sanity-plugin-markdown/src/plugin';
 'use client'
 
 /**
@@ -24,5 +26,6 @@ export default defineConfig({
     // Vision is for querying with GROQ from inside the Studio
     // https://www.sanity.io/docs/the-vision-plugin
     visionTool({defaultApiVersion: apiVersion}),
+    markdownSchema(),
   ],
 })
